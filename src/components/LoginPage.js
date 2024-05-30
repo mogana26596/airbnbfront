@@ -12,7 +12,7 @@ function LoginPage() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try{
-            const response = await axios.post('https://airbnb-backend21.onrender.com/register/signin', {...formData });
+            const response = await axios.post('https://airbnb-backendclone.onrender.com/register/signin', {...formData });
             console.log(response);
             if(response.data) {
                 await localStorage.setItem("token", response.data);
